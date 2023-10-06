@@ -15,7 +15,7 @@ public class FlowEx32Result {
 
             if(choice == 0) {
                 break;
-            } else if(choice < 1 || choice > 3) {
+            } else if(choice < 1 || choice > 3) { //(!(choice == 1 || choice =2 || choice ==3))
                 System.out.println("메뉴를 잘못 선택하셨습니다.");
                 continue;
             }

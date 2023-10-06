@@ -6,7 +6,7 @@ public class FlowEx30Result {
         //
         int sum = 0;
         int i = 0;
-        final int TARGET = 500;
+        final int TARGET = 500; //의미있는수
         //i값이 계속 증가가 되면 sum에 중첩으로 더하기
         //sum값이 100초과가 되는 시점의 i값
         while (sum < TARGET) {

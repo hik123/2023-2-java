@@ -4,7 +4,7 @@ public class Array3MissionResult2 {
     public static void main(String[] args) {
 
         int[] arr1 = {5, 10, 15, 16, 17};
-        int[] arr2 = new int[arr1.length +1];
+        int[] arr2 = new int[arr1.length + 1];
 
         for(int i=0; i<arr1.length; i++) { //5
             arr2[i] = arr1[i]; // 5, 10, 15, 16, 17, 0

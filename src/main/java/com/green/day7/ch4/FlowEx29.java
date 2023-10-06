@@ -19,7 +19,7 @@ public class FlowEx29 {
                     System.out.print("짝");
                 }
                 temp /= 10;
-            }
+            }while(temp != 0);
             System.out.println();
             //일단 1의자리숫자를 가져옴
             //반복문으로 10으로 나눈 몫이 0이 될때까지 계속 반복
