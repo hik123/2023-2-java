@@ -15,6 +15,8 @@ public class ArrayEx19 {
         int sum = 0;
         int i = 0, z = 0;
         int avg = 0;
+        int sumSum = 0;
+        int sumAvg = 0;
         int [] arr = score[i];
         System.out.print("번호\t국어\t수학\t영어\t총점\t평균\n");
         System.out.print("------------------------\n");
@@ -26,19 +28,26 @@ public class ArrayEx19 {
                 avg = sum/arr.length;
             }
             System.out.print(""+sum);
+            sumSum += sum;
+            sumAvg += avg;
             System.out.print("\t"+avg);
             System.out.println();
             sum=0;
         }
         System.out.print("------------------------\n");
-        for (i=0; i<score.length; i++) { //5
-            for (z=0; z<arr.length; z++) { //3
-                sum += score[i][z];  // sum = score[0][0] + score[1][0] + score[2][0] 각각 나와야
+        System.out.print("총점\t");
+
+        for (i=0; i<arr.length; i++) { //5
+            for (z=0; z<score.length; z++) { //3
+
+                sum += score[z][i];  // sum = score[0][0] + score[1][0] + score[2][0]
                                      // sum = score[0][1] + score[1][1] + score[2][1]
-            }
-            System.out.print("총점\t");
-            System.out.print(sum);
+            }                        // 0 01234  1 01234  2 01234
+            System.out.print(sum+"\t");
+            sum=0;
         }
+        System.out.print(sumSum);
+        System.out.print("\t"+sumAvg);
         /*번호    국어  영어  수학  총점  평균
         ------------------------------------
           1       101  102   103  306   102.0
