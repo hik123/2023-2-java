@@ -16,9 +16,9 @@ public class ArrayEx7Result {
         for (int i=0; i<arr.length; i++) {
 
             int rIdx = (int)(Math.random() * arr.length); //rIdx 인덱스자리
-           // if(i == rIdx) { continue; }
+            if(i == rIdx) { continue; }
             int tmp = arr[i];
-            arr[i] = arr[rIdx];
+            arr[i] =  arr[rIdx];
             arr[rIdx] = tmp;
 
         }
