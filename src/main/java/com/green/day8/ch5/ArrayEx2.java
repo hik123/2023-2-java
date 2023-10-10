@@ -16,6 +16,7 @@ public class ArrayEx2 {
          /*
         5개 방을 갖고 있는 정수형 배열 만들고
         각 방의 1~10의 랜덤한 값을 넣어주세요.
+        ex) 55555 안됨
         중복 허용
          */
         //double dval2 = Math.random();

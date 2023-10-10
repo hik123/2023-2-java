@@ -12,8 +12,5 @@ public class FlowEx23 {
         1 - I can do it.
         0 - I can do it.
         */
-        while (i>0) {
-            System.out.printf("%d - I can do it\n", --i);
         }
     }
-}
