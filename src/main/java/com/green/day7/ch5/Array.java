@@ -19,6 +19,6 @@ public class Array { //int[] arr 레퍼런스타입은 주소값 저장 // 주�
         System.out.println("arr[2]: " + arr[2]);
         System.out.println("arr[3]: " + arr[3]);
 
-        System.out.println("arr.length : " + arr.length);//arr.length arr배열의 크기
+        System.out.println("arr.length : " + arr.length);//arr.length arr배열의 길이
     }
 }

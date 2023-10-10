@@ -9,13 +9,13 @@ public class Array2 {
             System.out.printf("arr1[%d] : %d\n", i, arr1[i]);
         }
 
-        arr1 = arr2; //셸로우 카피(주소값8byte, 얕은 복사) 주소값만 복사  //딥카피 ex)10개짜리 배열을 그대로 복사
+        arr1 = arr2; //셸로우 카피(주소값8byte, 얕은 복사) 주소값만 복사  //딥카피 ex)10개짜리 배열을 그대로 10개짜리 그대로 복사
         System.out.println(arr1[0]);
 
         System.out.println("-------------------");
 
-        arr1[1] = 44;
-        arr2[2] = 55;
+        arr1[1] = 44; // arr1 5 44 15
+        arr2[2] = 55; // arr2 5 10 55
 
         for(int i=0; i<arr1.length; i++) {
             System.out.printf("arr1[%d] : %d\n", i, arr1[i]);
