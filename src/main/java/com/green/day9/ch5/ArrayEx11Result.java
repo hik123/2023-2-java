@@ -14,11 +14,27 @@ public class ArrayEx11Result {
         }
         System.out.println(Arrays.toString(numArr));
 
+        //cntArr[1]++;
+        //cntArr[1] += 1;
+        //cntArr[1] = cntArr[1] + 1;
+
         for(int i=0; i<LEN; i++) {
             int val = numArr[i];
             cntArr[val]++;
         }
         System.out.println(Arrays.toString(cntArr));
+        System.out.println("------------------");
+
+        /*for(int i=0; i<LEN; i++) {
+            int val = numArr[i];
+            cntArr[val]++;
+        }
+         */  //   numArr의 배열값 뽑아서 n에 차례대로 넣음
+        for(int n: numArr) { //foreach문 //향상된 for문 // for( 변수타입 변수명: 배열변수명) {}
+            cntArr[n]++;
+        }
+        System.out.println(Arrays.toString(cntArr));
+
 
     }
 }

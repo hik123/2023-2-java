@@ -37,12 +37,11 @@ public class ArrayEx19 {
         System.out.print("------------------------\n");
         System.out.print("총점\t");
 
-        for (i=0; i<arr.length; i++) { //5
-            for (z=0; z<score.length; z++) { //3
-
+        for (i=0; i<arr.length; i++) {
+            for (z=0; z<score.length; z++) {
                 sum += score[z][i];  // sum = score[0][0] + score[1][0] + score[2][0]
                                      // sum = score[0][1] + score[1][1] + score[2][1]
-            }                        // 0 01234  1 01234  2 01234
+            }
             System.out.print(sum+"\t");
             sum=0;
         }

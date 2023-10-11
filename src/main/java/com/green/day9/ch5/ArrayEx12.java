@@ -20,7 +20,7 @@ public class ArrayEx12 {
                     // names 값을 >> str에 하나하나 넣음
             System.out.printf("names[%d]: %s\n", z++, str);
         }           // 실행될때 마다 다음 name값을 str에
-
+                    //값만 찍을때 foreach문 사용
         System.out.println("--------------");
 
         for(int i=0; i<names.length; i++) {

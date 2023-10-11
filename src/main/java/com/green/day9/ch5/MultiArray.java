@@ -5,7 +5,7 @@ public class MultiArray {
         int[][] arr = {        //2차원배열    //int[][][] arr >> 3차원배열
                 { 100, 200 },
                 { 300, 400 },
-                { 500, 600 } //정수 배열 타입
+                { 500, 600 } //정수 배열 타입  //기본형 변수 .사용불가 주소값이 없어서 ex)int.~~~
         };
         System.out.println(arr[0][0]);
         System.out.println(arr[0][1]);
