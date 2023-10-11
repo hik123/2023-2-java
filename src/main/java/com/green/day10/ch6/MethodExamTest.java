@@ -23,7 +23,7 @@ public class MethodExamTest {
         me.scoreResultPrint(89); // B학점
         me.scoreResultPrint(80); // B학점
         me.scoreResultPrint(79); // C학점
-        me.scoreResultPrint(69); // D학점 ( 69점 이하는 전부 D학점)
+        me.scoreResultPrint(69); // D학점 (69점 이하는 전부 D학점)
         me.scoreResultPrint(-1); // 잘못된 점수 입니다.
     }
 }
