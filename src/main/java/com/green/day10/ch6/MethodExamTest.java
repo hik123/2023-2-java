@@ -7,13 +7,13 @@ public class MethodExamTest {
         me.checkZero(9);  // 0 이 아닙니다.
         me.checkZero(0);  // 0 입니다.
 
-        int r = me.randomValFreomTo(10, 100); //10 ~ 100랜덤값 리턴되도록;
-        int r2 = me.randomValFreomTo(5, 9); //5 ~ 9랜덤값 리턴되도록;
+        int r = me.randomValFromTo(10, 100); //10 ~ 100랜덤값 리턴되도록;
+        int r2 = me.randomValFromTo(5, 9); //5 ~ 9랜덤값 리턴되도록;
 
         System.out.println(r2);
         System.out.println("-----------------------------");
         for(int i=0; i<10; i++) {
-            System.out.println(me.randomValFreomTo(10, 100));
+            System.out.println(me.randomValFromTo(10, 100));
         }
 
         System.out.println("-----------------------------");
@@ -27,3 +27,8 @@ public class MethodExamTest {
         me.scoreResultPrint(-1); // 잘못된 점수 입니다.
     }
 }
+
+//프론트엔드 SPA
+// client side rendering
+// server side rendering
+// 검색엔진 >>소프트웨어program

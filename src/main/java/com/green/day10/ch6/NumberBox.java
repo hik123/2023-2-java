@@ -15,4 +15,4 @@ public class NumberBox { //클래스는 문서
         }
         //return; << void 마지막에 자동으로 return; 되서 안적어도됨
     }  //리턴 메소드 만들때는 void 마지막에 return; 넣어야됨
-}
+} // 추상메소드 >> 구현부 없

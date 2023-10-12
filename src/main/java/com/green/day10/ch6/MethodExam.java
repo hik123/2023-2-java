@@ -9,7 +9,7 @@ public class MethodExam {
         }
         System.out.println("0 이 아닙니다.");
     }
-    int randomValFreomTo(int n1, int n2) {
+    int randomValFromTo(int n1, int n2) {
         int rVal = (int) (Math.random() * (n2 - n1 + 1)) + n1;
         return rVal;
     }

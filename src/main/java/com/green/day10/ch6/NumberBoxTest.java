@@ -5,7 +5,7 @@ public class NumberBoxTest {
         NumberBox nb1 = new NumberBox();  //변수 선언과 동시에 초기화 //레퍼런스 변수는 주소값(객체, 배열) 만 담을수있다
         nb1 = new NumberBox();
 
-        nb1.sum(10, 20); //메소드를 호출!
+        nb1.sum(10, 20); //메소드를 호출(call method!
         nb1.sum(30, 40); //(argument)
 
         System.out.println("-----------------");

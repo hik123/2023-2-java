@@ -15,7 +15,7 @@ public class ReturnNumberBoxTest {
 
         System.out.println("r4 : " + rnb.abs(10)); //10
         System.out.println("r4 : " + rnb.abs(-99)); //99
-        System.out.println("r4 : " + rnb.abs(98)); //98
+        System.out.println("r4 : " + rnb.abs(98));  //98
 
 
     }
