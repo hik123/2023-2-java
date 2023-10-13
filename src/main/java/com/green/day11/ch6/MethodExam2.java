@@ -42,6 +42,5 @@ public class MethodExam2 {
                 return "겨울";
         }
         return "없음";
-
     }
 }
