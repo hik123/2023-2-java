@@ -20,7 +20,7 @@ public class ReferenceParamEx3 {
     public static void sortArr(int[] arr) { //오름차순 , 오른쪽이 제일큰값  //
         for (int i=arr.length-1; i>0; i--) {  //i       z
             for (int z=0; z<i; z++) {         //5       0 1 2 3 4
-                int nIdx = z + 1;             //4       1 2 3
+                int nIdx = z + 1;              //4       1 2 3
                 if (arr[z] > arr[nIdx]) {     //3       -
                     int tmp = arr[z];         //2       -
                     arr[z] = arr[nIdx];       //1       -
