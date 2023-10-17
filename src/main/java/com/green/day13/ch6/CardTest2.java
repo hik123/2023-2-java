@@ -8,7 +8,7 @@ public class CardTest2 {
         //Card[] cards2 = makeCards();
         System.out.println(cards.length); //52
 
-        for(Card c : cards) {
+        for(Card c : cards) { //c 주소값 계속바뀌면서
             c.printYourSelf();  //Spade (A)
                                 //Heart (2)
         }

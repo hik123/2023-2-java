@@ -42,5 +42,4 @@ public class CardTest3 {
         }
         return cArr;
     }
-
 }

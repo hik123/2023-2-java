@@ -1,7 +1,7 @@
 package com.green.day13.ch6;
 
 public class VarArgEx {
-    public static void sum(int... arr) {
+    public static void sum(int... arr) { //가변인자 //배열이라 가능
         System.out.println(arr.length);
         int sum = 0;
         for (int i=0; i<arr.length; i++) {

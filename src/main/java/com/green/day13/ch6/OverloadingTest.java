@@ -10,6 +10,7 @@ public class OverloadingTest {
 
     //int print(int n3, int n4) {}
     void print(String n2, int n1) {}
-    void pint(int n1, String str2) {}
+    void print(int n1, String str2) {}
+    //오버로딩 리턴타입이랑 상관없다
 
 }
