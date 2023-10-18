@@ -8,7 +8,7 @@ public class CardDeck {
     private void init() {
         cards = new Card[52];
 
-        String[] patterns = { "String", "Heart", "Diamond", "Club" };
+        String[] patterns = { "Spade", "Heart", "Diamond", "Club" };
         int idx = 0;
         for(int i=0; i<patterns.length; i++) {
             String pattern = patterns[i];
@@ -25,7 +25,7 @@ public class CardDeck {
         }
     }
     public Card getCard() {
-        Card c= null;
+        Card c = null;
         while (true) {
             int rIdx = (int) (Math.random() * cards.length);
             c = cards[rIdx];

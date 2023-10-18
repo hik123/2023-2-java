@@ -25,6 +25,7 @@ public class Data1 {
     }
 
     public void printMySelf() {
+        //this(10, 20, 30); 에러 //객체를 생성할때 생성자 호출할수 있다.
         System.out.printf("value: %d, value2: %d, value3: %d\n"
                 , value, value2, value3);
     }

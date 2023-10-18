@@ -13,7 +13,7 @@ public class CardTest {
             c.printMySelf();
         }
         System.out.println("---------");
-        //cd.printAll();
+        //cd.printAll(); //널포인터 익셉션 //런타임에러//
 
                     //호출할때마다 다른카드의 주소값 // 넘겨줬으면 지움 null로 바꾸기
 

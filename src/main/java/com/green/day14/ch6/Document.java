@@ -3,6 +3,10 @@ public class Document {
     static int cnt = 0;
     String name;
 
+    {
+        cnt++;
+    }
+
     public Document () {
         //this("제목없음" + ++cnt);
         this(String.format("제목없음%d", ++cnt));
