@@ -12,7 +12,6 @@ public class Car2 {
         gearType = c3.gearType;
         door = c3.door;
     }
-
     public void printMySelf () {
         System.out.printf("color=%s, gearType=%s, door=%d\n", color, gearType, door);
     }

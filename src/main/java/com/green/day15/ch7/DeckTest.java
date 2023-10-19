@@ -41,29 +41,47 @@ class Deck {
                 cardArr[idx++] = new Card(i, z);
             }
         }
-        for (Card c : cardArr) {
+        for (Card c : cardArr) { //각방의 타입  :컬렉션(배열)
             System.out.println(c);
+        }           //아래 for문과 같은의미
+        /*for (int i=0; i<cardArr.length; i++) {
+            Card c = cardArr[i];
+            System.out.println(c);
+        }*/
+    }
+    void shuffle () {//cardArr배열을 for문을 이용해서 cardArr[i]값과 cardArr[랜덤값] 스와핑 하기
+        for (int i=0; i<CARD_NUM; i++) {
+            int rIdx = (int)(Math.random() * CARD_NUM);
+            Card tmp = cardArr[i];
+            cardArr[i] = cardArr[rIdx];
+            cardArr[rIdx] = tmp;
+        }
+        for (int i=0; i<CARD_NUM; i++) {
+            System.out.println(cardArr[i]);
         }
     }
     public Card pick(int idx) {
-        return cardArr[idx] ;
+        return cardArr[idx];
     }
     public Card pick() {
         int rIdx = (int)(Math.random() * cardArr.length);
-        return cardArr[rIdx];
+        return pick(rIdx);
     }
 }
 public class DeckTest {
     public static void main(String[] args) {
-        Deck deck = new Deck();
+        Deck shf = new Deck();
+        System.out.println("---------------------");
+        shf.shuffle();
+        /*Deck deck = new Deck();
         Card c1 = deck.pick(51);
         System.out.println("---");
         System.out.println(c1);
         System.out.println("---");
         Card c2 = deck.pick(); //랜덤값
         System.out.println(c2);
-        //System.out.println(Card.KIND_MAX);
-       /* Card c = new Card();
+        System.out.println(Card.KIND_MAX);
+        Card c = new Card();
         System.out.printf("c.kind: %d, c.number: %d\n"
                 , c.kind, c.number); //c.kind: 4, c.number: 1
 
@@ -90,3 +108,11 @@ public class DeckTest {
 
     }
 }
+//접근지시어
+/*          class       package     상속      전부
+private     O           X           X         X //멤버필드는 private으로 은닉화, 캡슐화 //상수는 값변경이 안되서 public으로 열어놔도 괜춘
+default     O           O           X         X
+pritected   O           O           O         X
+public      O           O           O         O
+
+ */

@@ -19,7 +19,7 @@ class CaptionTv2 extends Tv2 {
     }
     void printParentChannel() { //1. Tv2 에 있는 채널, 2. ct2에 있는데 채널, 3. ct2 밑에있는 printParentChannel 지역변수 채널
         System.out.printf("parent-channel: %d\n", channel);
-    }                                           // this.channel
+    }                                            // this.channel
 }
 public class CationTvTest2 {
     public static void main(String[] args) {

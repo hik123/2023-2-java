@@ -2,18 +2,26 @@ package com.green.day15.ch7;
 
 public class Parent { //extends Object 자동생성 //모든 객체는 오브젝트를 상속받음 , 오브젝트는 최상위 부모객체
     int age;
-
-   public Parent () {}
-    public Parent(int age) {}
+    public Parent () {
+        super(); //부모 기본생성자 호출
+    }                      //this. > 메소드,속성 /전역변수와 지역변수 명이 같을때 this.생략불가 // this() 생성자호출
+    public Parent(int age) {
+        super();
+    }
 }
-
 class Child extends Parent { //상속
     public Child() {
-        super(); // 내바로 위에있는 부모의 주소값이 super()상수 에 저장
-        age = 100;
+        super(12); // 내바로 위에있는 부모의 주소값이 super()상수 에 저장
+        //age = 100;
    }
     void play() {
         System.out.printf("나는 %d살이야 같이놀자~.\n", age);
+    }
+}
+
+class GrandChild extends Child {
+    void play() {
+        System.out.println("hiiii");
     }
 }
 
