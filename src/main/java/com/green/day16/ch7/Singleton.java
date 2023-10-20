@@ -7,7 +7,7 @@ public class Singleton {
     public static Singleton getInstance() {
         if(singleton == null) {
             singleton = new Singleton();
-        }
+        }                   //객체
         return singleton;
     }
     //부모타입은 자식 객체 주소값을 담을 수 있다.
@@ -18,7 +18,7 @@ public class Singleton {
 class SingletonTest {
     public static void main(String[] args) {
 
-        Singleton s1 = Singleton.getInstance(); //static은 객체화랑 안해도됨 class명.메소드
+        Singleton s1 = Singleton.getInstance(); //대문자로 시작하는 메소드 호출 static은 객체화랑 안해도됨 class명.메소드
         Singleton s2 = Singleton.getInstance(); //
         System.out.println(s1 == s2);
         // Singleton s1 = new Singleton(); private 붙어있어서 객체화 불가능

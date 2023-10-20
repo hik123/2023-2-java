@@ -8,7 +8,7 @@ public class Animal {
 //부모타입은 자식 객체 주소값을 담을 수 있다.
 //자식타입은 부모 객체 주소값을 담을 수 없다.
 //타입은 알고 있는 메소드만 호출할 수 있고, 호출이 된다면 객체 기준이다
-class AnimalTest {
+class AnimalTest {  //다형성
     public static void main(String[] args) {
         //1. 부모타입은 자식 객체 주소값을 담을 수 있다.
         Dog d1 = new Bulldog();
@@ -91,7 +91,7 @@ class AnimalTest2 {
     }
     private static void callCrying(Animal ani) {
         ani.crying();  //bulldog인지 체크 > 맞으면 jump(); 호출 아니면 아무것도 안함
-        if(ani instanceof Bulldog) {
+        if(ani instanceof Bulldog) { // 변수 instanceof 클래스명
             Bulldog bulldog = (Bulldog)ani;
             bulldog.jump();
         }
