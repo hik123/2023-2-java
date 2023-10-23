@@ -8,7 +8,7 @@ public class Animal {
 //부모타입은 자식 객체 주소값을 담을 수 있다.
 //자식타입은 부모 객체 주소값을 담을 수 없다.
 //타입은 알고 있는 메소드만 호출할 수 있고, 호출이 된다면 객체 기준이다
-class AnimalTest {  //다형성
+class AnimalTest {  //다형성 상속관계에서 나타남
     public static void main(String[] args) {
         //1. 부모타입은 자식 객체 주소값을 담을 수 있다.
         Dog d1 = new Bulldog();
