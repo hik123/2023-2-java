@@ -5,10 +5,11 @@ import java.util.Map;
 
 public class HashMapTest {
     public static void main(String[] args) {
-        Map map = new HashMap(); //배열의 0번방, 1번방 개념이없는
+        Map map = new HashMap(); //배열의 idx 0번방, 1번방 개념이없는
         map.put("a", 10);   //k(키)값 과 v(밸류)값
-        map.put("b", 20);
+        map.put("b", "20");
         map.put("b", 30);   //
+        map.put(3, 40);   //
 
         Object obj = map.get("b"); //키값만 알면 밸류값 가져올수있음
         int val = (int)obj;
@@ -24,7 +25,7 @@ class HashMapTest2 {
         map.put("Audio", 0);
 
         map.put("Tv", map.get("Tv") + 1);
-        map.put("Tv", map.get("Tv") + 1);
+        //map.put("Tv", map.get("Tv") + 1);
 
         System.out.println("Tv-Count : " + map.get("Tv"));
         System.out.println("size : " + map.size());

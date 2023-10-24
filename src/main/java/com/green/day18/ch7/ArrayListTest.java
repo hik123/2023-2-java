@@ -31,10 +31,11 @@ public class ArrayListTest {
 class ArrayListTest2 {
     public static void main(String[] args) {
         int v1 =10; //프러머티브타입
-        Integer v2 =10; //레퍼런스타입 래퍼타입
+        Integer v2 =10; //레퍼런스타입 래퍼타입 //래퍼타입 > 기본형의 객체형 // 메소드를 가지고있다
         System.out.println(v1 == v2);
         List<Integer> list = new ArrayList(); //<>들어갈 수 있는 각방의 타입을 넣을수있음 기본형은 못적고 래퍼타입 적어야됨
-        //System.out.println(list.get(0)); 에러
+        //System.out.println(list.get(0)); 에러  // <>안에 기본형 못쓰기 때문에 래퍼타입
+                    //ㄴlist를 상속받은 객체의 주소값을 담겠다<정수값만 담을수있는> //List(interface)는 객체화가 될수없다
         System.out.println(list.size());
 
         list.add(10); //add(추가)메소드 통해서 값 추가 //=대입연산자 못씀 // ArrayList 타입 맞출려고 사용
@@ -78,6 +79,7 @@ class ArrayListTest3 {
         list.add(3, 200);
         System.out.println(list);
 
+        //int val = list.remove(0); 지운값을 리턴
         list.remove(0); // 0번방을 지우고 나머지 배열 앞으로 밀림
         System.out.println("4: " + list + ", size : " + list.size());
     }

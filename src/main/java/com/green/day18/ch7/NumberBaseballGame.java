@@ -11,6 +11,9 @@ public class NumberBaseballGame {
 }
 
 class NumberBaseball {
+    protected int strike;
+    protected int ball;
+    protected int out;
     private final int GAME_COUNT;
     private final int[] gameNumbers; //레퍼런스의 final은 주소값을 못바꿈! 객체는 바꿀수있음
 
@@ -38,11 +41,10 @@ class NumberBaseball {
     private boolean isContinueCheckResult (int[] arr) {
         int strike=0, ball=0, out;
         for (int i=0; i<gameNumbers.length; i++) {
-            for(int z=0; i<arr.length; i++) {
-            if (gameNumbers[i] == arr[i]) {
+            if (gameNumbers[i] == arr[i]) { strike++; }
+           // for(int z=0; i<arr.length; i++) {
 
-            }
-            }
+            //}
         }
 
         return false;
