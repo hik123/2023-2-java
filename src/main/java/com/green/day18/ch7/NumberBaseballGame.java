@@ -42,7 +42,7 @@ class NumberBaseball {
         int strike=0, ball=0, out;
         for (int i=0; i<gameNumbers.length; i++) {
             if (gameNumbers[i] == arr[i]) { strike++; }
-           // for(int z=0; i<arr.length; i++) {
+           // for(int z=0; z<arr.length; z++) {
 
             //}
         }
