@@ -7,7 +7,7 @@ public class ExceptionEx1 {
         try {                   //에러 발생안되면 try부분 쭉 실행됨
             num = 10;
             num = num / 0;      //모든 언어에서 0으로 나눴을때 에러터짐
-        } catch (Exception e) {  //예외가 터졌을때 catch부분 실행
+        } catch (Exception e) {  //try{}에서 예외가 터졌을때 catch부분 실행
             e.printStackTrace(); // 발생한 에러 출력
             System.out.println("예외 발생!");
             num = -1;
@@ -25,7 +25,7 @@ class ExceptionEx1_2 {
     public static void div(int num) {
         try {
             num = 10;
-            return;      // return 만나도 finally까지 다 실행후 돌아감
+            return;      // return 만나도 finally 실행후 return
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("예외 발생!");
@@ -51,7 +51,7 @@ class ExceptionEx1_3 {
             System.out.println("수학적 예외");
         } catch(NullPointerException e) {      //널포인트exception 발생했을때 실행
             System.out.println("널포인트 예외");
-        } catch (Exception e) {              // Exception은 가장 밑에있어야됨
+        } catch (Exception e) {              // 최상위 부모인 Exception은 가장 밑에있어야됨
             System.out.println("모든 예외");
         }
         System.out.println("끝");

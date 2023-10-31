@@ -40,13 +40,19 @@ class NumberBaseball {
     }
     private boolean isContinueCheckResult (int[] arr) {
         int strike=0, ball=0, out;
-        for (int i=0; i<gameNumbers.length; i++) {
-            if (gameNumbers[i] == arr[i]) { strike++; }
-           // for(int z=0; z<arr.length; z++) {
-
-            //}
+        for(int i=0; i<gameNumbers.length; i++) {
+            for(int z=0; z<arr.length; z++) {
+                if(gameNumbers[i] == arr[z]) {
+                    if(i == z) {
+                        strike++;
+                    } else {
+                        ball++;
+                    }
+                }
+            }
         }
-
+        out = GAME_COUNT - (strike + ball);
+        System.out.printf("strike: %d, ball: %d, out: %d\n",strike,ball,out);
         return false;
     }
     private void setRandomNumNotDuplicate() {

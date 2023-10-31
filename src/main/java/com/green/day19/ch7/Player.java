@@ -13,7 +13,7 @@ class AudioPlayer extends Player {
 }
 
 class VideoPlayer extends Player {
-    @Override
+    @Override//에노테이션
     public void play(int pos) {
         System.out.println("Video Player 위치 : " + pos);
     }
