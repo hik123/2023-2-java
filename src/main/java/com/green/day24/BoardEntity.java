@@ -5,7 +5,7 @@ public class BoardEntity {
     private String title;
     private String ctnts;
     private String writer;
-    private String createdAt;
+    private String createdAt; //created_at
     private String updatedAt;
 
     public int getIboard() {
@@ -54,5 +54,12 @@ public class BoardEntity {
 
     public void setUpdatedAt(String updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("iboard: %d, title: %s, ctnts: %s" +
+                ", writer: %s, createdAt: %s, updatedAt: %s"
+        , iboard, title, ctnts, writer, createdAt, updatedAt);
     }
 }
