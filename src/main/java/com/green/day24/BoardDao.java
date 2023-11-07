@@ -17,25 +17,31 @@ public class BoardDao { // Vo >Value Object / Dto >Data Transfer Object 데이�
                 , entity.getTitle(), entity.getCtnts(), entity.getWriter());
          */
 
-        String sql = "INSERT INTO board(title, ctnts, writer) " +
+        /*String sql = "INSERT INTO board(title, ctnts, writer) " +
                      "Values" +
                      "(?, ?, ?)";
+         */
+
+        String sql = "INSERT INTO board " +
+                     "SET title = ? " +
+                     ", ctnts = ? " +
+                     ", writer = ? ";
 
         System.out.println(sql);
         PreparedStatement ps = null;
         Connection con = null;
         try {
             con = MyConn.getConn();
-            ps = con.prepareStatement(sql); //주소값. 인스턴스메소드 //PreparedStatement 쓰면 "(?, ?, ?)"가능
+            ps = con.prepareStatement(sql); //주소값. 인스턴스메소드 //PreparedStatement ?에 값을 넣을수있음
             ps.setString(1, entity.getTitle());
             ps.setString(2, entity.getCtnts());
             ps.setString(3, entity.getWriter());
                                                         //FirstInLastOut
-            result = ps.executeUpdate();
+            result = ps.executeUpdate(); //쿼리문실행
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            MyConn.close(con, ps);
+            MyConn.close(con, ps); //스택방식, 역순으로 종료
         }
         return result;
 
@@ -70,6 +76,7 @@ public class BoardDao { // Vo >Value Object / Dto >Data Transfer Object 데이�
         return null;
     }
 
+    //검색, 페이징
     public static List<BoardEntity> selBoardList() {
         List<BoardEntity> list = new ArrayList();
         Connection con = null;
@@ -152,9 +159,9 @@ class MyConnTest2 {
         //writer : 홍길동
         //DB에 INSERT 해주세요.
         BoardEntity entity = new BoardEntity();
-        entity.setTitle("오늘 Insert배움");
-        entity.setCtnts("java를 통해 board테이블에 값 넣어봄.");
-        entity.setWriter("신난다");
+        entity.setTitle("추가");
+        entity.setCtnts("11월 02일.");
+        entity.setWriter("ㅇ");
         BoardDao.insBoard(entity); // 다른 클래스 static메소드 호출 class명.메소드()
     }
 }
