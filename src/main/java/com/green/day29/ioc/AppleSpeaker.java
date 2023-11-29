@@ -14,3 +14,8 @@ public class AppleSpeaker implements Speaker {
         woofer.soundBase();
     }
 }
+
+/*  json
+        [배열]
+        {객체}
+ */
