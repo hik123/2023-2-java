@@ -2,7 +2,7 @@ package com.green.day20.ch8;
 
 public class ExceptionEx12 {
     public static void main(String[] args) {
-        method1();
+        //method1();
         try {
             method2();
         } catch (Exception e) {
