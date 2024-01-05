@@ -1,11 +1,13 @@
 package com.green.day18.ch7;
 
 import com.green.day12.ch6.Card;
+import com.green.day68.ch14.MyArrayList;
 
 import java.util.*;
 
 public class ArrayListTest {
     public static void main(String[] args) {
+
         List list = new ArrayList(); //상속관계
         list.add(10);
         list.add(10.3f);
@@ -25,7 +27,10 @@ public class ArrayListTest {
         obj = 103l;
         obj = "ddd";
         obj = new Card();
+
     }
+
+
 }
 
 class ArrayListTest2 {
